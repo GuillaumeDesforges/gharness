@@ -18,6 +18,8 @@ For the history of *how* we got here, read `docs/logs/`.
   what the interface promises, and what's deferred.
 - [Providers](providers.md) — what a provider must do, and the shape
   decisions that govern all three.
+- [Agent](agent.md) — the conversation driver: contract, the fixed-point
+  default, and the policies on tool failure and termination.
 
 ### Conventions
 - [Testing](testing.md) — what we test, what we don't, and the
