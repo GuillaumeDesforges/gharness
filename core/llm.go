@@ -1,4 +1,4 @@
-package gharness
+package core
 
 import "context"
 

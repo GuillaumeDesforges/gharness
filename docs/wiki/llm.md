@@ -2,7 +2,7 @@
 
 A language model in this project is a function over conversation: given
 the dialogue so far, return the assistant's next reply. The `LLM`
-interface in `llm.go` is the whole spec.
+interface in `core/llm.go` is the whole spec.
 
 ## Specification
 
