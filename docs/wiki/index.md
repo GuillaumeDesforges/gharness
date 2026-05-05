@@ -1,16 +1,30 @@
-# Wiki
+# Wiki catalog
 
-Current-state knowledge about gharness. Pages are rewritten freely as
-understanding improves; for the history of *how* we got here, read
-`docs/logs/`.
+The wiki captures **specification, design decisions, and conceptual
+knowledge** about gharness — *not* implementation reference. The code
+is the source of truth for how things are built; this wiki is the
+source of truth for what they must do and why they look the way they
+do. Pages are rewritten freely as understanding improves.
+
+For the history of *how* we got here, read `docs/logs/`.
 
 ## Pages
 
+### Plan
 - [Roadmap](roadmap.md) — staged plan from core domain to extensions.
 
-## Conventions
+### Design
+- [LLM contract](llm.md) — what a language model is in this project,
+  what the interface promises, and what's deferred.
+- [Providers](providers.md) — what a provider must do, and the shape
+  decisions that govern all three.
 
-- One topic per page. If a page grows past ~300 lines, split it.
-- Lead with the smallest useful summary. Detail follows.
-- When a page is wrong, fix it in place. When the change is non-obvious,
-  also add a log entry explaining *why* it changed.
+### Conventions
+- [Testing](testing.md) — what we test, what we don't, and the
+  given/when/then discipline.
+
+## Conventions for this catalog
+
+- Every wiki page has one entry here, ≤120 chars.
+- Update same-commit when you add, rename, or retire a page.
+- Categories grow organically; split or rename when shape changes.
