@@ -27,10 +27,10 @@ func main() {
 
 	reply, err := llm.Complete(context.Background(), []core.Message{
 		{Role: core.RoleUser, Content: "In one short sentence, what is gharness?"},
-	})
+	}, nil)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
-	fmt.Println(reply)
+	fmt.Println(reply.Content)
 }
